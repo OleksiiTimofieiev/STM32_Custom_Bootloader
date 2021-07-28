@@ -2,3 +2,4 @@ Udemy link: https://www.udemy.com/course/stm32f4-arm-cortex-mx-custom-bootloader
 
 - on STM32 by default bootloader is deactivated. Boot pins should be modified.
 - stored on MCU flash or ROM
+- 
