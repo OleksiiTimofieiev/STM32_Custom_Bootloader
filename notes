@@ -1,5 +1,50 @@
 Udemy link: https://www.udemy.com/course/stm32f4-arm-cortex-mx-custom-bootloader-development/learn/lecture/9995618#overview
 
+script:
+cd /home/otimofieiev/Ac6/SystemWorkbench && ./eclipse
+
+cube:
+/home/otimofieiev/STM32CubeMX
+
+
+
 - on STM32 by default bootloader is deactivated. Boot pins should be modified.
 - stored on MCU flash or ROM
 - 
+
+Board:
+- flash memory starts:  0x0800 0000
+- flash memory ends:    0x0807 FFFF
+- flash memory has 8 sectors
+
+Reset:
+- PC loaded with value 0x00000000
+- reads memory location value@0x000000000 into MSP (Main Stack Pointer) == initialized stack pointer register == memory aliasing
+- 0x0000 0004 == reset handler
+- PC jumps to reset handler
+- from reset handler main function can be called
+- memory alisaing - to jump to the necessary address
+
+Bootable memory:
+- flash
+- embedded SRAM
+- system memory == ROM
+
+USART:
+- PC10 - Tx
+- PC11 - Rx
+
+Bootloader transport:
+USART2 - From/To PC
+USART3 - Debug Port
+
+Placement in memory:
+Sector 0 & 1
+2-7 == storing user application
+
+Bootloader supported commands:
+- BL_GET_VER
+
+Protocol:
+CMD -> ACK/NACK (CRC32) + 1 byte length -> Reply
+

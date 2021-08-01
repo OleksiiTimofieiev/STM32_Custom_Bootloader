@@ -1,0 +1,20 @@
+10:24:27 **** Incremental Build of configuration Debug for project STM32_Custom_Bootloader ****
+make -j8 all 
+Building file: ../Core/Src/main.c
+Invoking: MCU GCC Compiler
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+Finished building: ../Core/Src/main.c
+ 
+Building target: STM32_Custom_Bootloader.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "STM32_Custom_Bootloader.elf" @"objects.list"   -lm
+Finished building target: STM32_Custom_Bootloader.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "STM32_Custom_Bootloader.elf" "STM32_Custom_Bootloader.hex"
+arm-none-eabi-size "STM32_Custom_Bootloader.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5516	     20	   1716	   7252	   1c54	STM32_Custom_Bootloader.elf
+ 

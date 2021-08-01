@@ -1,0 +1,1312 @@
+18:11:51 **** Build of configuration Debug for project test ****
+make -j8 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../startup/startup_stm32f446xx.s
+Building file: ../src/main.c
+Building file: ../src/stm32f4xx_it.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Building file: ../src/syscalls.c
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+Building file: ../src/system_stm32f4xx.c
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+Building file: ../Utilities/STM32F4xx-Nucleo/stm32f4xx_nucleo.c
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32f4xx_it.d" -MT"src/stm32f4xx_it.o" -o "src/stm32f4xx_it.o" "../src/stm32f4xx_it.c"
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -g -o "startup/startup_stm32f446xx.o" "../startup/startup_stm32f446xx.s"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+Building file: ../StdPeriph_Driver/src/misc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Utilities/STM32F4xx-Nucleo/stm32f4xx_nucleo.d" -MT"Utilities/STM32F4xx-Nucleo/stm32f4xx_nucleo.o" -o "Utilities/STM32F4xx-Nucleo/stm32f4xx_nucleo.o" "../Utilities/STM32F4xx-Nucleo/stm32f4xx_nucleo.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+Invoking: MCU GCC Compiler
+Finished building: ../startup/startup_stm32f446xx.s
+Finished building: ../startup/startup_stm32.s
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/misc.d" -MT"StdPeriph_Driver/src/misc.o" -o "StdPeriph_Driver/src/misc.o" "../StdPeriph_Driver/src/misc.c"
+ 
+Building file: ../StdPeriph_Driver/src/stm32f4xx_adc.c
+ 
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f4xx_can.c
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_adc.d" -MT"StdPeriph_Driver/src/stm32f4xx_adc.o" -o "StdPeriph_Driver/src/stm32f4xx_adc.o" "../StdPeriph_Driver/src/stm32f4xx_adc.c"
+Invoking: MCU GCC Compiler
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_HAL_DRIVER -DUSE_RTOS_SYSTICK -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Utilities/STM32F4xx-Nucleo" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_can.d" -MT"StdPeriph_Driver/src/stm32f4xx_can.o" -o "StdPeriph_Driver/src/stm32f4xx_can.o" "../StdPeriph_Driver/src/stm32f4xx_can.c"
+Finished building: ../src/syscalls.c
+../src/system_stm32f4xx.c:452:13: error: conflicting types for 'AHBPrescTable'
+ __I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+             ^~~~~~~~~~~~~
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f446xx.h:187:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:173,
+                 from ../src/system_stm32f4xx.c:317:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/system_stm32f4xx.h:76:23: note: previous declaration of 'AHBPrescTable' was here
+ extern const uint8_t  AHBPrescTable[16];    /*!< AHB prescalers table values */
+                       ^~~~~~~~~~~~~
+../src/system_stm32f4xx.c: In function 'SetSysClock':
+../src/system_stm32f4xx.c:760:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+     while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
+     ^~~~~
+../src/system_stm32f4xx.c:761:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+     {
+     ^
+src/subdir.mk:27: recipe for target 'src/system_stm32f4xx.o' failed
+ 
+make: *** [src/system_stm32f4xx.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../StdPeriph_Driver/src/misc.c:76:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/misc.h:123:0: warning: "IS_NVIC_PRIORITY_GROUP" redefined
+ #define IS_NVIC_PRIORITY_GROUP(GROUP) (((GROUP) == NVIC_PriorityGroup_0) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:238:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/misc.h:38,
+                 from ../StdPeriph_Driver/src/misc.c:76:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_cortex.h:306:0: note: this is the location of the previous definition
+ #define IS_NVIC_PRIORITY_GROUP(GROUP) (((GROUP) == NVIC_PRIORITYGROUP_0) || \
+ 
+In file included from ../StdPeriph_Driver/src/misc.c:76:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/misc.h:129:0: warning: "IS_NVIC_PREEMPTION_PRIORITY" redefined
+ #define IS_NVIC_PREEMPTION_PRIORITY(PRIORITY)  ((PRIORITY) < 0x10)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:238:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/misc.h:38,
+                 from ../StdPeriph_Driver/src/misc.c:76:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_cortex.h:312:0: note: this is the location of the previous definition
+ #define IS_NVIC_PREEMPTION_PRIORITY(PRIORITY)  ((PRIORITY) < 0x10U)
+ 
+In file included from ../StdPeriph_Driver/src/misc.c:76:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/misc.h:131:0: warning: "IS_NVIC_SUB_PRIORITY" redefined
+ #define IS_NVIC_SUB_PRIORITY(PRIORITY)  ((PRIORITY) < 0x10)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:238:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/misc.h:38,
+                 from ../StdPeriph_Driver/src/misc.c:76:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_cortex.h:314:0: note: this is the location of the previous definition
+ #define IS_NVIC_SUB_PRIORITY(PRIORITY)         ((PRIORITY) < 0x10U)
+ 
+In file included from ../StdPeriph_Driver/src/misc.c:76:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/misc.h:145:0: warning: "IS_SYSTICK_CLK_SOURCE" redefined
+ #define IS_SYSTICK_CLK_SOURCE(SOURCE) (((SOURCE) == SysTick_CLKSource_HCLK) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:238:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/misc.h:38,
+                 from ../StdPeriph_Driver/src/misc.c:76:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_cortex.h:318:0: note: this is the location of the previous definition
+ #define IS_SYSTICK_CLK_SOURCE(SOURCE) (((SOURCE) == SYSTICK_CLKSOURCE_HCLK) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:98:3: error: conflicting types for 'CAN_InitTypeDef'
+ } CAN_InitTypeDef;
+   ^~~~~~~~~~~~~~~
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:97:3: note: previous declaration of 'CAN_InitTypeDef' was here
+ } CAN_InitTypeDef;
+   ^~~~~~~~~~~~~~~
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:225:0: warning: "IS_CAN_MODE" redefined
+ #define IS_CAN_MODE(MODE) (((MODE) == CAN_Mode_Normal) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:777:0: note: this is the location of the previous definition
+ #define IS_CAN_MODE(MODE) (((MODE) == CAN_MODE_NORMAL) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:269:0: warning: "IS_CAN_SJW" redefined
+ #define IS_CAN_SJW(SJW) (((SJW) == CAN_SJW_1tq) || ((SJW) == CAN_SJW_2tq)|| \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:781:0: note: this is the location of the previous definition
+ #define IS_CAN_SJW(SJW) (((SJW) == CAN_SJW_1TQ) || ((SJW) == CAN_SJW_2TQ) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:295:0: warning: "IS_CAN_BS1" redefined
+ #define IS_CAN_BS1(BS1) ((BS1) <= CAN_BS1_16tq)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:783:0: note: this is the location of the previous definition
+ #define IS_CAN_BS1(BS1) (((BS1) == CAN_BS1_1TQ) || ((BS1) == CAN_BS1_2TQ) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:312:0: warning: "IS_CAN_BS2" redefined
+ #define IS_CAN_BS2(BS2) ((BS2) <= CAN_BS2_8tq)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:791:0: note: this is the location of the previous definition
+ #define IS_CAN_BS2(BS2) (((BS2) == CAN_BS2_1TQ) || ((BS2) == CAN_BS2_2TQ) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:320:0: warning: "IS_CAN_PRESCALER" redefined
+ #define IS_CAN_PRESCALER(PRESCALER) (((PRESCALER) >= 1) && ((PRESCALER) <= 1024))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:795:0: note: this is the location of the previous definition
+ #define IS_CAN_PRESCALER(PRESCALER) (((PRESCALER) >= 1U) && ((PRESCALER) <= 1024U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:339:0: warning: "IS_CAN_FILTER_MODE" redefined
+ #define IS_CAN_FILTER_MODE(MODE) (((MODE) == CAN_FilterMode_IdMask) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:799:0: note: this is the location of the previous definition
+ #define IS_CAN_FILTER_MODE(MODE) (((MODE) == CAN_FILTERMODE_IDMASK) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:351:0: warning: "IS_CAN_FILTER_SCALE" redefined
+ #define IS_CAN_FILTER_SCALE(SCALE) (((SCALE) == CAN_FilterScale_16bit) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:801:0: note: this is the location of the previous definition
+ #define IS_CAN_FILTER_SCALE(SCALE) (((SCALE) == CAN_FILTERSCALE_16BIT) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:362:0: warning: "IS_CAN_FILTER_FIFO" redefined
+ #define IS_CAN_FILTER_FIFO(FIFO) (((FIFO) == CAN_FilterFIFO0) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:805:0: note: this is the location of the previous definition
+ #define IS_CAN_FILTER_FIFO(FIFO) (((FIFO) == CAN_FILTER_FIFO0) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:366:0: warning: "CAN_FilterFIFO0" redefined
+ #define CAN_FilterFIFO0  CAN_Filter_FIFO0
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_def.h:31:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:29,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1043:0: note: this is the location of the previous definition
+ #define CAN_FilterFIFO0             CAN_FILTER_FIFO0
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:367:0: warning: "CAN_FilterFIFO1" redefined
+ #define CAN_FilterFIFO1  CAN_Filter_FIFO1
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_def.h:31:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:29,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1044:0: note: this is the location of the previous definition
+ #define CAN_FilterFIFO1             CAN_FILTER_FIFO1
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:384:0: warning: "IS_CAN_STDID" redefined
+ #define IS_CAN_STDID(STDID)   ((STDID) <= ((uint32_t)0x7FF))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:811:0: note: this is the location of the previous definition
+ #define IS_CAN_STDID(STDID)   ((STDID) <= 0x7FFU)
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:385:0: warning: "IS_CAN_EXTID" redefined
+ #define IS_CAN_EXTID(EXTID)   ((EXTID) <= ((uint32_t)0x1FFFFFFF))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:812:0: note: this is the location of the previous definition
+ #define IS_CAN_EXTID(EXTID)   ((EXTID) <= 0x1FFFFFFFU)
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:386:0: warning: "IS_CAN_DLC" redefined
+ #define IS_CAN_DLC(DLC)       ((DLC) <= ((uint8_t)0x08))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:813:0: note: this is the location of the previous definition
+ #define IS_CAN_DLC(DLC)       ((DLC) <= 8U)
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:396:0: warning: "IS_CAN_IDTYPE" redefined
+ #define IS_CAN_IDTYPE(IDTYPE) (((IDTYPE) == CAN_Id_Standard) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:814:0: note: this is the location of the previous definition
+ #define IS_CAN_IDTYPE(IDTYPE)  (((IDTYPE) == CAN_ID_STD) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:400:0: warning: "CAN_ID_STD" redefined
+ #define CAN_ID_STD      CAN_Id_Standard           
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:427:0: note: this is the location of the previous definition
+ #define CAN_ID_STD                  (0x00000000U)  /*!< Standard Id */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:401:0: warning: "CAN_ID_EXT" redefined
+ #define CAN_ID_EXT      CAN_Id_Extended
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:428:0: note: this is the location of the previous definition
+ #define CAN_ID_EXT                  (0x00000004U)  /*!< Extended Id */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:411:0: warning: "IS_CAN_RTR" redefined
+ #define IS_CAN_RTR(RTR) (((RTR) == CAN_RTR_Data) || ((RTR) == CAN_RTR_Remote))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:816:0: note: this is the location of the previous definition
+ #define IS_CAN_RTR(RTR) (((RTR) == CAN_RTR_DATA) || ((RTR) == CAN_RTR_REMOTE))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:414:0: warning: "CAN_RTR_DATA" redefined
+ #define CAN_RTR_DATA     CAN_RTR_Data         
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:436:0: note: this is the location of the previous definition
+ #define CAN_RTR_DATA                (0x00000000U)  /*!< Data frame   */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:415:0: warning: "CAN_RTR_REMOTE" redefined
+ #define CAN_RTR_REMOTE   CAN_RTR_Remote
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:437:0: note: this is the location of the previous definition
+ #define CAN_RTR_REMOTE              (0x00000002U)  /*!< Remote frame */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:499:0: warning: "CAN_FLAG_RQCP0" redefined
+ #define CAN_FLAG_RQCP0             ((uint32_t)0x38000001) /*!< Request MailBox0 Flag */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:465:0: note: this is the location of the previous definition
+ #define CAN_FLAG_RQCP0              (0x00000500U)  /*!< Request complete MailBox 0 flag   */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:500:0: warning: "CAN_FLAG_RQCP1" redefined
+ #define CAN_FLAG_RQCP1             ((uint32_t)0x38000100) /*!< Request MailBox1 Flag */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:469:0: note: this is the location of the previous definition
+ #define CAN_FLAG_RQCP1              (0x00000508U)  /*!< Request complete MailBox1 flag    */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:501:0: warning: "CAN_FLAG_RQCP2" redefined
+ #define CAN_FLAG_RQCP2             ((uint32_t)0x38010000) /*!< Request MailBox2 Flag */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+StdPeriph_Driver/src/subdir.mk:144: recipe for target 'StdPeriph_Driver/src/stm32f4xx_can.o' failed
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:473:0: note: this is the location of the previous definition
+ #define CAN_FLAG_RQCP2              (0x00000510U)  /*!< Request complete MailBox2 flag    */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:505:0: warning: "CAN_FLAG_FF0" redefined
+ #define CAN_FLAG_FF0               ((uint32_t)0x32000008) /*!< FIFO 0 Full Flag            */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:485:0: note: this is the location of the previous definition
+ #define CAN_FLAG_FF0                (0x00000203U)  /*!< RX FIFO 0 Full flag               */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:506:0: warning: "CAN_FLAG_FOV0" redefined
+ #define CAN_FLAG_FOV0              ((uint32_t)0x32000010) /*!< FIFO 0 Overrun Flag         */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:486:0: note: this is the location of the previous definition
+ #define CAN_FLAG_FOV0               (0x00000204U)  /*!< RX FIFO 0 Overrun flag            */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:508:0: warning: "CAN_FLAG_FF1" redefined
+ #define CAN_FLAG_FF1               ((uint32_t)0x34000008) /*!< FIFO 1 Full Flag            */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:487:0: note: this is the location of the previous definition
+ #define CAN_FLAG_FF1                (0x00000403U)  /*!< RX FIFO 1 Full flag               */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:509:0: warning: "CAN_FLAG_FOV1" redefined
+ #define CAN_FLAG_FOV1              ((uint32_t)0x34000010) /*!< FIFO 1 Overrun Flag         */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:488:0: note: this is the location of the previous definition
+ #define CAN_FLAG_FOV1               (0x00000404U)  /*!< RX FIFO 1 Overrun flag            */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:512:0: warning: "CAN_FLAG_WKU" redefined
+ #define CAN_FLAG_WKU               ((uint32_t)0x31000008) /*!< Wake up Flag */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:494:0: note: this is the location of the previous definition
+ #define CAN_FLAG_WKU                (0x00000103U)  /*!< Wake up interrupt flag            */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:513:0: warning: "CAN_FLAG_SLAK" redefined
+ #define CAN_FLAG_SLAK              ((uint32_t)0x31000012) /*!< Sleep acknowledge Flag */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:492:0: note: this is the location of the previous definition
+ #define CAN_FLAG_SLAK               (0x00000101U)  /*!< Sleep acknowledge flag            */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:518:0: warning: "CAN_FLAG_EWG" redefined
+ #define CAN_FLAG_EWG               ((uint32_t)0x10F00001) /*!< Error Warning Flag   */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:498:0: note: this is the location of the previous definition
+ #define CAN_FLAG_EWG                (0x00000300U)  /*!< Error warning flag                */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:519:0: warning: "CAN_FLAG_EPV" redefined
+ #define CAN_FLAG_EPV               ((uint32_t)0x10F00002) /*!< Error Passive Flag   */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:499:0: note: this is the location of the previous definition
+ #define CAN_FLAG_EPV                (0x00000301U)  /*!< Error passive flag                */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:520:0: warning: "CAN_FLAG_BOF" redefined
+ #define CAN_FLAG_BOF               ((uint32_t)0x10F00004) /*!< Bus-Off Flag         */
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:500:0: note: this is the location of the previous definition
+ #define CAN_FLAG_BOF                (0x00000302U)  /*!< Bus-Off flag                      */
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:572:0: warning: "IS_CAN_IT" redefined
+ #define IS_CAN_IT(IT)        (((IT) == CAN_IT_TME) || ((IT) == CAN_IT_FMP0)  ||\
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:246:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_can.h:818:0: note: this is the location of the previous definition
+ #define IS_CAN_IT(IT) ((IT) <= (CAN_IT_TX_MAILBOX_EMPTY     | CAN_IT_RX_FIFO0_MSG_PENDING      | \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:65:0: warning: "RCC_HSE_OFF" redefined
+ #define RCC_HSE_OFF                      ((uint8_t)0x00)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:120:0: note: this is the location of the previous definition
+ #define RCC_HSE_OFF                      0x00000000U
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:66:0: warning: "RCC_HSE_ON" redefined
+ #define RCC_HSE_ON                       ((uint8_t)0x01)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:121:0: note: this is the location of the previous definition
+ #define RCC_HSE_ON                       RCC_CR_HSEON
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:68:0: warning: "IS_RCC_HSE" redefined
+ #define IS_RCC_HSE(HSE) (((HSE) == RCC_HSE_OFF) || ((HSE) == RCC_HSE_ON) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1361:0: note: this is the location of the previous definition
+ #define IS_RCC_HSE(HSE) (((HSE) == RCC_HSE_OFF) || ((HSE) == RCC_HSE_ON) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:92:0: warning: "IS_RCC_PLLSAI_DIVR_VALUE" redefined
+ #define IS_RCC_PLLSAI_DIVR_VALUE(VALUE) (((VALUE) == RCC_PLLSAIDivR_Div2) ||\
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6929:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAI_DIVR_VALUE(VALUE) (((VALUE) == RCC_PLLSAIDIVR_2)  ||\
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:107:0: warning: "IS_RCC_PLLM_VALUE" redefined
+ #define IS_RCC_PLLM_VALUE(VALUE) ((VALUE) <= 63)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1414:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLM_VALUE(VALUE) ((VALUE) <= 63U)
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:108:0: warning: "IS_RCC_PLLN_VALUE" redefined
+ #define IS_RCC_PLLN_VALUE(VALUE) ((50 <= (VALUE)) && ((VALUE) <= 432))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6877:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLN_VALUE(VALUE) ((50U <= (VALUE)) && ((VALUE) <= 432U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:109:0: warning: "IS_RCC_PLLP_VALUE" redefined
+ #define IS_RCC_PLLP_VALUE(VALUE) (((VALUE) == 2) || ((VALUE) == 4) || ((VALUE) == 6) || ((VALUE) == 8))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1416:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLP_VALUE(VALUE) (((VALUE) == 2U) || ((VALUE) == 4U) || ((VALUE) == 6U) || ((VALUE) == 8U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:110:0: warning: "IS_RCC_PLLQ_VALUE" redefined
+ #define IS_RCC_PLLQ_VALUE(VALUE) ((4 <= (VALUE)) && ((VALUE) <= 15))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1418:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLQ_VALUE(VALUE) ((2U <= (VALUE)) && ((VALUE) <= 15U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:112:0: warning: "IS_RCC_PLLR_VALUE" redefined
+ #define IS_RCC_PLLR_VALUE(VALUE) ((2 <= (VALUE)) && ((VALUE) <= 7))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6964:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLR_VALUE(VALUE) ((2U <= (VALUE)) && ((VALUE) <= 7U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:115:0: warning: "IS_RCC_PLLI2SN_VALUE" redefined
+ #define IS_RCC_PLLI2SN_VALUE(VALUE) ((50 <= (VALUE)) && ((VALUE) <= 432))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6878:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SN_VALUE(VALUE) ((50U <= (VALUE)) && ((VALUE) <= 432U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:116:0: warning: "IS_RCC_PLLI2SR_VALUE" redefined
+ #define IS_RCC_PLLI2SR_VALUE(VALUE) ((2 <= (VALUE))  && ((VALUE) <= 7))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6913:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SR_VALUE(VALUE) ((2U <= (VALUE)) && ((VALUE) <= 7U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:117:0: warning: "IS_RCC_PLLI2SM_VALUE" redefined
+ #define IS_RCC_PLLI2SM_VALUE(VALUE) ((2 <= (VALUE))  && ((VALUE) <= 63))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6937:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SM_VALUE(VALUE)   ((2U <= (VALUE)) && ((VALUE) <= 63U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:118:0: warning: "IS_RCC_PLLI2SQ_VALUE" redefined
+ #define IS_RCC_PLLI2SQ_VALUE(VALUE) ((2 <= (VALUE))  && ((VALUE) <= 15))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6917:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SQ_VALUE(VALUE)     ((2U <= (VALUE)) && ((VALUE) <= 15U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:120:0: warning: "IS_RCC_PLLI2SP_VALUE" redefined
+ #define IS_RCC_PLLI2SP_VALUE(VALUE) (((VALUE) == 2) || ((VALUE) == 4) || ((VALUE) == 6) || ((VALUE) == 8))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6966:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SP_VALUE(VALUE)       (((VALUE) == RCC_PLLI2SP_DIV2) ||\
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:121:0: warning: "IS_RCC_PLLSAIM_VALUE" redefined
+ #define IS_RCC_PLLSAIM_VALUE(VALUE) ((VALUE) <= 63)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6971:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIM_VALUE(VALUE)       ((VALUE) <= 63U)
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:126:0: warning: "IS_RCC_PLLSAIN_VALUE" redefined
+ #define IS_RCC_PLLSAIN_VALUE(VALUE) ((50 <= (VALUE)) && ((VALUE) <= 432))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6919:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIN_VALUE(VALUE)     ((50U <= (VALUE)) && ((VALUE) <= 432U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:128:0: warning: "IS_RCC_PLLSAIP_VALUE" redefined
+ #define IS_RCC_PLLSAIP_VALUE(VALUE) (((VALUE) == 2) || ((VALUE) == 4) || ((VALUE) == 6) || ((VALUE) == 8))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6973:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIP_VALUE(VALUE)       (((VALUE) == RCC_PLLSAIP_DIV2) ||\
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:130:0: warning: "IS_RCC_PLLSAIQ_VALUE" redefined
+ #define IS_RCC_PLLSAIQ_VALUE(VALUE) ((2 <= (VALUE)) && ((VALUE) <= 15))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6921:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIQ_VALUE(VALUE)     ((2U <= (VALUE)) && ((VALUE) <= 15U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:131:0: warning: "IS_RCC_PLLSAIR_VALUE" redefined
+ #define IS_RCC_PLLSAIR_VALUE(VALUE) ((2 <= (VALUE)) && ((VALUE) <= 7))  
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6923:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIR_VALUE(VALUE)     ((2U <= (VALUE)) && ((VALUE) <= 7U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:133:0: warning: "IS_RCC_PLLSAI_DIVQ_VALUE" redefined
+ #define IS_RCC_PLLSAI_DIVQ_VALUE(VALUE) ((1 <= (VALUE)) && ((VALUE) <= 32))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6925:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAI_DIVQ_VALUE(VALUE) ((1U <= (VALUE)) && ((VALUE) <= 32U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:134:0: warning: "IS_RCC_PLLI2S_DIVQ_VALUE" redefined
+ #define IS_RCC_PLLI2S_DIVQ_VALUE(VALUE) ((1 <= (VALUE)) && ((VALUE) <= 32))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6927:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2S_DIVQ_VALUE(VALUE) ((1U <= (VALUE)) && ((VALUE) <= 32U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:185:0: warning: "IS_RCC_HCLK" redefined
+ #define IS_RCC_HCLK(HCLK) (((HCLK) == RCC_SYSCLK_Div1) || ((HCLK) == RCC_SYSCLK_Div2) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1420:0: note: this is the location of the previous definition
+ #define IS_RCC_HCLK(HCLK) (((HCLK) == RCC_SYSCLK_DIV1)   || ((HCLK) == RCC_SYSCLK_DIV2)   || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:202:0: warning: "IS_RCC_PCLK" redefined
+ #define IS_RCC_PCLK(PCLK) (((PCLK) == RCC_HCLK_Div1) || ((PCLK) == RCC_HCLK_Div2) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1428:0: note: this is the location of the previous definition
+ #define IS_RCC_PCLK(PCLK) (((PCLK) == RCC_HCLK_DIV1) || ((PCLK) == RCC_HCLK_DIV2) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:235:0: warning: "RCC_LSE_OFF" redefined
+ #define RCC_LSE_OFF                      ((uint8_t)0x00)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:130:0: note: this is the location of the previous definition
+ #define RCC_LSE_OFF                    0x00000000U
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:236:0: warning: "RCC_LSE_ON" redefined
+ #define RCC_LSE_ON                       ((uint8_t)0x01)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:131:0: note: this is the location of the previous definition
+ #define RCC_LSE_ON                     RCC_BDCR_LSEON
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:238:0: warning: "IS_RCC_LSE" redefined
+ #define IS_RCC_LSE(LSE) (((LSE) == RCC_LSE_OFF) || ((LSE) == RCC_LSE_ON) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1364:0: note: this is the location of the previous definition
+ #define IS_RCC_LSE(LSE) (((LSE) == RCC_LSE_OFF) || ((LSE) == RCC_LSE_ON) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:279:0: warning: "IS_RCC_RTCCLK_SOURCE" redefined
+ #define IS_RCC_RTCCLK_SOURCE(SOURCE) (((SOURCE) == RCC_RTCCLKSource_LSE) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_def.h:31:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:29,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2884:0: note: this is the location of the previous definition
+ #define IS_RCC_RTCCLK_SOURCE        IS_RCC_RTCCLKSOURCE
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:818:0: warning: "IS_RCC_MCO1SOURCE" redefined
+ #define IS_RCC_MCO1SOURCE(SOURCE) (((SOURCE) == RCC_MCO1Source_HSI) || ((SOURCE) == RCC_MCO1Source_LSE) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1434:0: note: this is the location of the previous definition
+ #define IS_RCC_MCO1SOURCE(SOURCE) (((SOURCE) == RCC_MCO1SOURCE_HSI) || ((SOURCE) == RCC_MCO1SOURCE_LSE) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:840:0: warning: "IS_RCC_MCO2SOURCE" redefined
+ #define IS_RCC_MCO2SOURCE(SOURCE) (((SOURCE) == RCC_MCO2Source_SYSCLK) || ((SOURCE) == RCC_MCO2Source_PLLI2SCLK)|| \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:7106:0: note: this is the location of the previous definition
+ #define IS_RCC_MCO2SOURCE(SOURCE) (((SOURCE) == RCC_MCO2SOURCE_SYSCLK) || ((SOURCE) == RCC_MCO2SOURCE_PLLI2SCLK)|| \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_can.c:85:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:876:0: warning: "IS_RCC_CALIBRATION_VALUE" redefined
+ #define IS_RCC_CALIBRATION_VALUE(VALUE) ((VALUE) <= 0x1F)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1440:0: note: this is the location of the previous definition
+ #define IS_RCC_CALIBRATION_VALUE(VALUE) ((VALUE) <= 0x1FU)
+ 
+../StdPeriph_Driver/src/stm32f4xx_can.c:108:0: warning: "INAK_TIMEOUT" redefined
+ #define INAK_TIMEOUT      ((uint32_t)0x0000FFFF)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_def.h:31:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:29,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1048:0: note: this is the location of the previous definition
+ #define INAK_TIMEOUT                CAN_TIMEOUT_VALUE
+ 
+../StdPeriph_Driver/src/stm32f4xx_can.c:110:0: warning: "SLAK_TIMEOUT" redefined
+ #define SLAK_TIMEOUT      ((uint32_t)0x0000FFFF)
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:65:0: warning: "RCC_HSE_OFF" redefined
+ #define RCC_HSE_OFF                      ((uint8_t)0x00)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+Finished building: ../src/main.c
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:120:0: note: this is the location of the previous definition
+ #define RCC_HSE_OFF                      0x00000000U
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:66:0: warning: "RCC_HSE_ON" redefined
+ #define RCC_HSE_ON                       ((uint8_t)0x01)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:121:0: note: this is the location of the previous definition
+ #define RCC_HSE_ON                       RCC_CR_HSEON
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:68:0: warning: "IS_RCC_HSE" redefined
+ #define IS_RCC_HSE(HSE) (((HSE) == RCC_HSE_OFF) || ((HSE) == RCC_HSE_ON) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1361:0: note: this is the location of the previous definition
+ #define IS_RCC_HSE(HSE) (((HSE) == RCC_HSE_OFF) || ((HSE) == RCC_HSE_ON) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:92:0: warning: "IS_RCC_PLLSAI_DIVR_VALUE" redefined
+ #define IS_RCC_PLLSAI_DIVR_VALUE(VALUE) (((VALUE) == RCC_PLLSAIDivR_Div2) ||\
+ 
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6929:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAI_DIVR_VALUE(VALUE) (((VALUE) == RCC_PLLSAIDIVR_2)  ||\
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:107:0: warning: "IS_RCC_PLLM_VALUE" redefined
+ #define IS_RCC_PLLM_VALUE(VALUE) ((VALUE) <= 63)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1414:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLM_VALUE(VALUE) ((VALUE) <= 63U)
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:108:0: warning: "IS_RCC_PLLN_VALUE" redefined
+ #define IS_RCC_PLLN_VALUE(VALUE) ((50 <= (VALUE)) && ((VALUE) <= 432))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6877:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLN_VALUE(VALUE) ((50U <= (VALUE)) && ((VALUE) <= 432U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:109:0: warning: "IS_RCC_PLLP_VALUE" redefined
+ #define IS_RCC_PLLP_VALUE(VALUE) (((VALUE) == 2) || ((VALUE) == 4) || ((VALUE) == 6) || ((VALUE) == 8))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_def.h:31:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:29,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_can.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_can.c:84:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1049:0: note: this is the location of the previous definition
+ #define SLAK_TIMEOUT                CAN_TIMEOUT_VALUE
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1416:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLP_VALUE(VALUE) (((VALUE) == 2U) || ((VALUE) == 4U) || ((VALUE) == 6U) || ((VALUE) == 8U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:110:0: warning: "IS_RCC_PLLQ_VALUE" redefined
+ #define IS_RCC_PLLQ_VALUE(VALUE) ((4 <= (VALUE)) && ((VALUE) <= 15))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1418:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLQ_VALUE(VALUE) ((2U <= (VALUE)) && ((VALUE) <= 15U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:112:0: warning: "IS_RCC_PLLR_VALUE" redefined
+ #define IS_RCC_PLLR_VALUE(VALUE) ((2 <= (VALUE)) && ((VALUE) <= 7))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6964:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLR_VALUE(VALUE) ((2U <= (VALUE)) && ((VALUE) <= 7U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:115:0: warning: "IS_RCC_PLLI2SN_VALUE" redefined
+ #define IS_RCC_PLLI2SN_VALUE(VALUE) ((50 <= (VALUE)) && ((VALUE) <= 432))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6878:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SN_VALUE(VALUE) ((50U <= (VALUE)) && ((VALUE) <= 432U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:116:0: warning: "IS_RCC_PLLI2SR_VALUE" redefined
+ #define IS_RCC_PLLI2SR_VALUE(VALUE) ((2 <= (VALUE))  && ((VALUE) <= 7))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6913:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SR_VALUE(VALUE) ((2U <= (VALUE)) && ((VALUE) <= 7U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:117:0: warning: "IS_RCC_PLLI2SM_VALUE" redefined
+ #define IS_RCC_PLLI2SM_VALUE(VALUE) ((2 <= (VALUE))  && ((VALUE) <= 63))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6937:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SM_VALUE(VALUE)   ((2U <= (VALUE)) && ((VALUE) <= 63U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:118:0: warning: "IS_RCC_PLLI2SQ_VALUE" redefined
+ #define IS_RCC_PLLI2SQ_VALUE(VALUE) ((2 <= (VALUE))  && ((VALUE) <= 15))
+ 
+make: *** [StdPeriph_Driver/src/stm32f4xx_can.o] Error 1
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6917:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SQ_VALUE(VALUE)     ((2U <= (VALUE)) && ((VALUE) <= 15U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:120:0: warning: "IS_RCC_PLLI2SP_VALUE" redefined
+ #define IS_RCC_PLLI2SP_VALUE(VALUE) (((VALUE) == 2) || ((VALUE) == 4) || ((VALUE) == 6) || ((VALUE) == 8))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+Finished building: ../StdPeriph_Driver/src/misc.c
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6966:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2SP_VALUE(VALUE)       (((VALUE) == RCC_PLLI2SP_DIV2) ||\
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:121:0: warning: "IS_RCC_PLLSAIM_VALUE" redefined
+ #define IS_RCC_PLLSAIM_VALUE(VALUE) ((VALUE) <= 63)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+ 
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6971:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIM_VALUE(VALUE)       ((VALUE) <= 63U)
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:126:0: warning: "IS_RCC_PLLSAIN_VALUE" redefined
+ #define IS_RCC_PLLSAIN_VALUE(VALUE) ((50 <= (VALUE)) && ((VALUE) <= 432))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6919:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIN_VALUE(VALUE)     ((50U <= (VALUE)) && ((VALUE) <= 432U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:128:0: warning: "IS_RCC_PLLSAIP_VALUE" redefined
+ #define IS_RCC_PLLSAIP_VALUE(VALUE) (((VALUE) == 2) || ((VALUE) == 4) || ((VALUE) == 6) || ((VALUE) == 8))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6973:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIP_VALUE(VALUE)       (((VALUE) == RCC_PLLSAIP_DIV2) ||\
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:130:0: warning: "IS_RCC_PLLSAIQ_VALUE" redefined
+ #define IS_RCC_PLLSAIQ_VALUE(VALUE) ((2 <= (VALUE)) && ((VALUE) <= 15))
+ 
+Finished building: ../src/stm32f4xx_it.c
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6921:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIQ_VALUE(VALUE)     ((2U <= (VALUE)) && ((VALUE) <= 15U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:131:0: warning: "IS_RCC_PLLSAIR_VALUE" redefined
+ #define IS_RCC_PLLSAIR_VALUE(VALUE) ((2 <= (VALUE)) && ((VALUE) <= 7))  
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6923:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAIR_VALUE(VALUE)     ((2U <= (VALUE)) && ((VALUE) <= 7U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:133:0: warning: "IS_RCC_PLLSAI_DIVQ_VALUE" redefined
+ #define IS_RCC_PLLSAI_DIVQ_VALUE(VALUE) ((1 <= (VALUE)) && ((VALUE) <= 32))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6925:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLSAI_DIVQ_VALUE(VALUE) ((1U <= (VALUE)) && ((VALUE) <= 32U))
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:134:0: warning: "IS_RCC_PLLI2S_DIVQ_VALUE" redefined
+ #define IS_RCC_PLLI2S_DIVQ_VALUE(VALUE) ((1 <= (VALUE)) && ((VALUE) <= 32))
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+Finished building: ../Utilities/STM32F4xx-Nucleo/stm32f4xx_nucleo.c
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:6927:0: note: this is the location of the previous definition
+ #define IS_RCC_PLLI2S_DIVQ_VALUE(VALUE) ((1U <= (VALUE)) && ((VALUE) <= 32U))
+ 
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:185:0: warning: "IS_RCC_HCLK" redefined
+ #define IS_RCC_HCLK(HCLK) (((HCLK) == RCC_SYSCLK_Div1) || ((HCLK) == RCC_SYSCLK_Div2) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+ 
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1420:0: note: this is the location of the previous definition
+ #define IS_RCC_HCLK(HCLK) (((HCLK) == RCC_SYSCLK_DIV1)   || ((HCLK) == RCC_SYSCLK_DIV2)   || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:202:0: warning: "IS_RCC_PCLK" redefined
+ #define IS_RCC_PCLK(PCLK) (((PCLK) == RCC_HCLK_Div1) || ((PCLK) == RCC_HCLK_Div2) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1428:0: note: this is the location of the previous definition
+ #define IS_RCC_PCLK(PCLK) (((PCLK) == RCC_HCLK_DIV1) || ((PCLK) == RCC_HCLK_DIV2) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:235:0: warning: "RCC_LSE_OFF" redefined
+ #define RCC_LSE_OFF                      ((uint8_t)0x00)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:130:0: note: this is the location of the previous definition
+ #define RCC_LSE_OFF                    0x00000000U
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:236:0: warning: "RCC_LSE_ON" redefined
+ #define RCC_LSE_ON                       ((uint8_t)0x01)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:131:0: note: this is the location of the previous definition
+ #define RCC_LSE_ON                     RCC_BDCR_LSEON
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:238:0: warning: "IS_RCC_LSE" redefined
+ #define IS_RCC_LSE(LSE) (((LSE) == RCC_LSE_OFF) || ((LSE) == RCC_LSE_ON) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1364:0: note: this is the location of the previous definition
+ #define IS_RCC_LSE(LSE) (((LSE) == RCC_LSE_OFF) || ((LSE) == RCC_LSE_ON) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:279:0: warning: "IS_RCC_RTCCLK_SOURCE" redefined
+ #define IS_RCC_RTCCLK_SOURCE(SOURCE) (((SOURCE) == RCC_RTCCLKSource_LSE) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_def.h:31:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:29,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:2884:0: note: this is the location of the previous definition
+ #define IS_RCC_RTCCLK_SOURCE        IS_RCC_RTCCLKSOURCE
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:818:0: warning: "IS_RCC_MCO1SOURCE" redefined
+ #define IS_RCC_MCO1SOURCE(SOURCE) (((SOURCE) == RCC_MCO1Source_HSI) || ((SOURCE) == RCC_MCO1Source_LSE) || \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1434:0: note: this is the location of the previous definition
+ #define IS_RCC_MCO1SOURCE(SOURCE) (((SOURCE) == RCC_MCO1SOURCE_HSI) || ((SOURCE) == RCC_MCO1SOURCE_LSE) || \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:840:0: warning: "IS_RCC_MCO2SOURCE" redefined
+ #define IS_RCC_MCO2SOURCE(SOURCE) (((SOURCE) == RCC_MCO2Source_SYSCLK) || ((SOURCE) == RCC_MCO2Source_PLLI2SCLK)|| \
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:33:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:7106:0: note: this is the location of the previous definition
+ #define IS_RCC_MCO2SOURCE(SOURCE) (((SOURCE) == RCC_MCO2SOURCE_SYSCLK) || ((SOURCE) == RCC_MCO2SOURCE_PLLI2SCLK)|| \
+ 
+In file included from ../StdPeriph_Driver/src/stm32f4xx_adc.c:107:0:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_rcc.h:876:0: warning: "IS_RCC_CALIBRATION_VALUE" redefined
+ #define IS_RCC_CALIBRATION_VALUE(VALUE) ((VALUE) <= 0x1F)
+ 
+In file included from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_conf.h:222:0,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/CMSIS/device/stm32f4xx.h:250,
+                 from /home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/StdPeriph_Driver/inc/stm32f4xx_adc.h:38,
+                 from ../StdPeriph_Driver/src/stm32f4xx_adc.c:106:
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/test/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:1440:0: note: this is the location of the previous definition
+ #define IS_RCC_CALIBRATION_VALUE(VALUE) ((VALUE) <= 0x1FU)
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_adc.c
+ 
+
+18:11:52 Build Finished (took 814ms)
+
