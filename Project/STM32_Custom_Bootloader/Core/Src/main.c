@@ -101,11 +101,18 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  char somedata[]="HelloFromBootLoader\r\n";
+  char debug[]="Debug: HelloFromBootLoader\r\n";
+
   while (1)
   {
     /* USER CODE END WHILE */
+	  HAL_UART_Transmit(&huart2, (uint8_t*)somedata, sizeof(somedata), HAL_MAX_DELAY);
+	  HAL_UART_Transmit(&huart3, (uint8_t*)debug, sizeof(debug), HAL_MAX_DELAY);
 
+	  uint32_t current_tick = HAL_GetTick();
 
+	  while( HAL_GetTick() <= (current_tick + 1));
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

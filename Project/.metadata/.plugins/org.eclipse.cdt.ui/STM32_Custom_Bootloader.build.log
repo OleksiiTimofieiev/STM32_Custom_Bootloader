@@ -1,4 +1,4 @@
-10:24:27 **** Incremental Build of configuration Debug for project STM32_Custom_Bootloader ****
+16:10:48 **** Incremental Build of configuration Debug for project STM32_Custom_Bootloader ****
 make -j8 all 
 Building file: ../Core/Src/main.c
 Invoking: MCU GCC Compiler
@@ -16,8 +16,8 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "STM32_Custom_Bootloader.elf" "STM32_Custom_Bootloader.hex"
 arm-none-eabi-size "STM32_Custom_Bootloader.elf"
    text	   data	    bss	    dec	    hex	filename
-   5516	     20	   1716	   7252	   1c54	STM32_Custom_Bootloader.elf
+   5984	     20	   1716	   7720	   1e28	STM32_Custom_Bootloader.elf
  
 
-10:24:28 Build Finished (took 314ms)
+16:10:49 Build Finished (took 473ms)
 
