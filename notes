@@ -4,7 +4,7 @@ script:
 cd /home/otimofieiev/Ac6/SystemWorkbench && ./eclipse
 
 cube:
-/home/otimofieiev/STM32CubeMX
+cd /home/otimofieiev/STM32CubeMX && ./STM32CubeMX
 
 
 
@@ -47,4 +47,6 @@ Bootloader supported commands:
 
 Protocol:
 CMD -> ACK/NACK (CRC32) + 1 byte length -> Reply
+
+VTOR has to be activated and present for application
 
