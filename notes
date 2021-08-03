@@ -48,5 +48,6 @@ Bootloader supported commands:
 Protocol:
 CMD -> ACK/NACK (CRC32) + 1 byte length -> Reply
 
-VTOR has to be activated and present for application
+VTOR has to be activated and present for application == #define USER_VECT_TAB_ADDRESS
+*.ld => address of the binary loading
 
