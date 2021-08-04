@@ -26,8 +26,8 @@
 
 #define BL_DEBUG_MSG_EN
 
-#define D_UART &huart2
 #define C_UART &huart2
+
 
 typedef enum
 {
@@ -56,6 +56,7 @@ typedef enum
 
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef huart2;
+UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
 
@@ -82,14 +83,10 @@ static void	printMsgDebug(UART uart, char *format,...)
 	va_list args;
 	va_start(args, format);
 	vsprintf(str, format, args);
-	if (uart == Console)
-	{
-		HAL_UART_Transmit(C_UART, (uint8_t*)str, strlen(str), HAL_MAX_DELAY);
-	}
-	else
-	{
-		HAL_UART_Transmit(D_UART, (uint8_t*)str, strlen(str), HAL_MAX_DELAY);
-	}
+
+	HAL_UART_Transmit(C_UART, (uint8_t*)str, strlen(str), HAL_MAX_DELAY);
+
+
 	va_end(args);
 
 #endif
@@ -123,6 +120,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

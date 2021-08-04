@@ -19,51 +19,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include <stdarg.h>
-#include <string.h>
-#include <stdio.h>
+#include "boot.h"
 
-#define BL_DEBUG_MSG_EN
 
-#define D_UART &huart2
-#define C_UART &huart2
-
-typedef enum
-{
-	Console,
-	Debug
-} UART;
-
-#define FLASH_SECTOR2_BASE_ADDRESS 0x08008000U
-
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
-
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-CRC_HandleTypeDef hcrc;
-
-UART_HandleTypeDef huart2;
-UART_HandleTypeDef huart3;
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
@@ -71,67 +29,8 @@ static void MX_GPIO_Init(void);
 static void MX_CRC_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_USART3_UART_Init(void);
-/* USER CODE BEGIN PFP */
 
-/* USER CODE END PFP */
 
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
-
-static void	printMsg(UART uart, char *format,...)
-{
-#ifdef BL_DEBUG_MSG_EN
-	char str[80];
-
-	va_list args;
-	va_start(args, format);
-	vsprintf(str, format, args);
-	if (uart == Console)
-	{
-		HAL_UART_Transmit(C_UART, (uint8_t*)str, strlen(str), HAL_MAX_DELAY);
-	}
-	else
-	{
-		HAL_UART_Transmit(D_UART, (uint8_t*)str, strlen(str), HAL_MAX_DELAY);
-	}
-	va_end(args);
-
-#endif
-}
-
-void        bootloader_uart_read_data(void)
-{
-
-}
-
-void        bootloader_jump_to_user_app(void)
-{
-  void (*app_reset_handler)(void);
-  
-  printMsg(Debug, "booloader jump to user app\r\n");
-
-  // configure MSP
-  uint32_t msp_value = *(volatile uint32_t *)FLASH_SECTOR2_BASE_ADDRESS;
-
-  //  cmsis
-  __set_MSP(msp_value);
-
-  uint32_t resethandler_address = *(volatile uint32_t *) (FLASH_SECTOR2_BASE_ADDRESS + 4);
-
-  app_reset_handler = (void*) resethandler_address;
-
-  printMsg(Debug, "BL_DEBUG_MSG: app reset handler addr : %#x\n",app_reset_handler);
-
-  //3. jump to reset handler of the user application
-  app_reset_handler();
-}
 
 int main(void)
 {

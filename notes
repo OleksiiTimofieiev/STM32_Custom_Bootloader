@@ -6,6 +6,9 @@ cd /home/otimofieiev/Ac6/SystemWorkbench && ./eclipse
 cube:
 cd /home/otimofieiev/STM32CubeMX && ./STM32CubeMX
 
+host emulator:
+cd /home/otimofieiev/Desktop/STM32_Custom_Bootloader/BootloaderProjectSTM32/SourceCode/HOST/python && python3 STM32_Programmer_V1.py
+
 
 
 - on STM32 by default bootloader is deactivated. Boot pins should be modified.

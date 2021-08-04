@@ -1,23 +1,6 @@
-14:33:58 **** Incremental Build of configuration Release for project STM32_Custom_Bootloader ****
+14:02:53 **** Incremental Build of configuration Release for project STM32_Custom_Bootloader ****
 make -j8 all 
-Building file: ../Core/Src/system_stm32f4xx.c
-Invoking: MCU GCC Compiler
-/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Release
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/STM32_Custom_Bootloader/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" -o "Core/Src/system_stm32f4xx.o" "../Core/Src/system_stm32f4xx.c"
-Finished building: ../Core/Src/system_stm32f4xx.c
- 
-Building target: STM32_Custom_Bootloader.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "STM32_Custom_Bootloader.elf" @"objects.list"   -lm
-Finished building target: STM32_Custom_Bootloader.elf
- 
-make --no-print-directory post-build
-Generating hex and Printing size information:
-arm-none-eabi-objcopy -O ihex "STM32_Custom_Bootloader.elf" "STM32_Custom_Bootloader.hex"
-arm-none-eabi-size "STM32_Custom_Bootloader.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8604	    120	   1736	  10460	   28dc	STM32_Custom_Bootloader.elf
- 
+make: Nothing to be done for 'all'.
 
-14:33:58 Build Finished (took 378ms)
+14:02:53 Build Finished (took 63ms)
 

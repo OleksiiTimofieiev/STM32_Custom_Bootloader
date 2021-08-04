@@ -1,4 +1,4 @@
-14:29:57 **** Incremental Build of configuration Debug for project User_app_STM32 ****
+10:26:38 **** Incremental Build of configuration Debug for project User_app_STM32 ****
 make -j8 all 
 Building file: ../Core/Src/main.c
 Invoking: MCU GCC Compiler
@@ -16,8 +16,8 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "User_app_STM32.elf" "User_app_STM32.hex"
 arm-none-eabi-size "User_app_STM32.elf"
    text	   data	    bss	    dec	    hex	filename
-   8216	    120	   1664	  10000	   2710	User_app_STM32.elf
+   8192	    120	   1728	  10040	   2738	User_app_STM32.elf
  
 
-14:29:58 Build Finished (took 316ms)
+10:26:38 Build Finished (took 262ms)
 

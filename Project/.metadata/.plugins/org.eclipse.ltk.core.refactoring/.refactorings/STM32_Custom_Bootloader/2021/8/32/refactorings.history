@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;STM32_Custom_Bootloader/Core/Inc/Boot.h&apos; to &apos;boot.h&apos;" description="Rename resource &apos;Boot.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/Boot.h" name="boot.h" stamp="1628058235672" updateReferences="true"/>
+</session>
