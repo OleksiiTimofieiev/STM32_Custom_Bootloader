@@ -227,21 +227,6 @@ void bootloader_handle_getver_cmd(uint8_t *bl_rx_buffer)
     }
 }
 
-//Read the chip identifier or device Identifier
-uint16_t get_mcu_chip_id(void)
-{
-/*
-	The STM32F446xx MCUs integrate an MCU ID code. This ID identifies the ST MCU partnumber
-	and the die revision. It is part of the DBG_MCU component and is mapped on the
-	external PPB bus (see Section 33.16 on page 1304). This code is accessible using the
-	JTAG debug pCat.2ort (4 to 5 pins) or the SW debug port (two pins) or by the user software.
-	It is even accessible while the MCU is under system reset. */
-	uint16_t cid;
-	cid = (uint16_t)(DBGMCU->IDCODE) & 0x0FFF;
-	return  cid;
-
-}
-
 /*Helper function to handle BL_GET_CID command */
 void bootloader_handle_getcid_cmd(uint8_t *pBuffer)
 {

@@ -86,6 +86,7 @@ uint8_t bl_rx_buffer[BL_RX_LEN];
 //This command is used to read all the sector protection status.
 #define BL_READ_SECTOR_P_STATUS	0x5A
 
+
 //This command is used to read the OTP contents.
 #define BL_OTP_READ				0x5B
 

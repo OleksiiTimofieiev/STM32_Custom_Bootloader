@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="USER_VECT_TAB_ADDRESS" key="selection"/>
+		<item value="supported_commands" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="supported_commands"/>
 			<item value="USER_VECT_TAB_ADDRESS"/>
 			<item value="OFF"/>
 			<item value="VECT_TAB"/>
