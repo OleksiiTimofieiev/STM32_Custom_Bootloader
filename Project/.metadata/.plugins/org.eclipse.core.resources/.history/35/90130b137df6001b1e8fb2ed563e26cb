@@ -318,39 +318,6 @@ void bootloader_handle_getrdp_cmd(uint8_t *pBuffer)
 	}
 }
 
-
-//verify the address sent by the host .
-uint8_t verify_address(uint32_t go_address)
-{
-	//so, what are the valid addresses to which we can jump ?
-	//can we jump to system memory ? yes
-	//can we jump to sram1 memory ?  yes
-	//can we jump to sram2 memory ? yes
-	//can we jump to backup sram memory ? yes
-	//can we jump to peripheral memory ? its possible , but dont allow. so no
-	//can we jump to external memory ? yes.
-
-//incomplete -poorly written .. optimize it
-	if ( go_address >= SRAM1_BASE && go_address <= SRAM1_END)
-	{
-		return ADDR_VALID;
-	}
-	else if ( go_address >= SRAM2_BASE && go_address <= SRAM2_END)
-	{
-		return ADDR_VALID;
-	}
-	else if ( go_address >= FLASH_BASE && go_address <= FLASH_END)
-	{
-		return ADDR_VALID;
-	}
-	else if ( go_address >= BKPSRAM_BASE && go_address <= BKPSRAM_END)
-	{
-		return ADDR_VALID;
-	}
-	else
-		return ADDR_INVALID;
-}
-
 /*Helper function to handle BL_GO_TO_ADDR command */
 void bootloader_handle_go_cmd(uint8_t *pBuffer)
 {

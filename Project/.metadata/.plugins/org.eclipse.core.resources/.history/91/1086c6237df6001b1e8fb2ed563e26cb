@@ -20,7 +20,7 @@
 #define ADDR_VALID 0x00
 #define ADDR_INVALID 0x01
 
-/*Some Start and End addresses of different memories of STM32F446xx MCU */
+*Some Start and End addresses of different memories of STM32F446xx MCU */
 /*Change this according to your MCU */
 #define SRAM1_SIZE            112*1024     // STM32F446RE has 112KB of SRAM1
 #define SRAM1_END             (SRAM1_BASE + SRAM1_SIZE)
