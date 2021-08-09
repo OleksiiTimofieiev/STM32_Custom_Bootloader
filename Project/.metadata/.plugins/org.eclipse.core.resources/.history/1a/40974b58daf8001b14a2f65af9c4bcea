@@ -13,10 +13,6 @@
 #include <string.h>
 #include <stdio.h>
 #include "stm32f4xx_hal.h"
-#include "main.h"
-
-#define INVALID_SECTOR 0x04
-
 
 //version 1.0
 #define BL_VERSION 0x10

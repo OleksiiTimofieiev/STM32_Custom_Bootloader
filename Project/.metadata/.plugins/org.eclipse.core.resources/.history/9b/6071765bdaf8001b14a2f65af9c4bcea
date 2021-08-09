@@ -6,7 +6,7 @@
  */
 
 #include "boot.h"
-
+#include "main.h"
 
 uint8_t supported_commands[] = {
                                BL_GET_VER ,
