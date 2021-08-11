@@ -1,7 +1,24 @@
-09:25:57 **** Clean-only build of configuration Debug for project User_app_STM32 ****
-make -j8 clean 
-rm -rf *
+11:12:37 **** Incremental Build of configuration Debug for project User_app_STM32 ****
+make -j8 all 
+Building file: ../Core/Src/main.c
+Invoking: MCU GCC Compiler
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/User_app_STM32/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/User_app_STM32/Core/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/User_app_STM32/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/User_app_STM32/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/User_app_STM32/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/User_app_STM32/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:3: warning: implicit declaration of function 'MX_USART3_UART_Init'; did you mean 'MX_USART2_UART_Init'? [-Wimplicit-function-declaration]
+   MX_USART3_UART_Init();
+   ^~~~~~~~~~~~~~~~~~~
+   MX_USART2_UART_Init
+Finished building: ../Core/Src/main.c
  
+Building target: User_app_STM32.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "User_app_STM32.elf" @"objects.list"   -lm
+Core/Src/main.o: In function `main':
+/home/otimofieiev/Desktop/STM32_Custom_Bootloader/Project/User_app_STM32/Debug/../Core/Src/main.c:124: undefined reference to `MX_USART3_UART_Init'
+makefile:35: recipe for target 'User_app_STM32.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [User_app_STM32.elf] Error 1
 
-09:25:57 Build Finished (took 60ms)
+11:12:37 Build Finished (took 266ms)
 
